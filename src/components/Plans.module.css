@@ -1,0 +1,49 @@
+.plans-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: #ffffff;
+    background: url('../assets/home-background.jpeg') center center;
+    position: relative;
+    height: 100vh; /* Adjust the height as needed */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.plans-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better readability */
+    z-index: 1;
+}
+
+.plan-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 375px;
+    z-index: 2;
+}
+
+.plan-card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.plan-card .plan-info h4 {
+    font-size: 1.5rem;
+    margin: 10px 0 5px 0;
+}
+
+.plan-card .price, .plan-card .resolution, .plan-card .devices {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
